@@ -1,5 +1,5 @@
 def ConvertDectoOct(number): 
-  oct_representation = oct(number) 
+  oct_representation = oct(number)[2:] 
   return oct_representation 
   
 if __name__ == "__main__": 

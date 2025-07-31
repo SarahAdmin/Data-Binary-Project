@@ -1,4 +1,9 @@
 def ConvertDectoHex(number): 
-  return hex(number)[2:].upper()
+  hex_representation = hex(number)[2:].upper()
+  return hex_representation
   
-ConvertDectoHex(int(input('Enter your number: ')))
+if __name__ = "__main__": 
+   user_input = int(input('Enter a number: ')) 
+   hex_output = ConvertDectoHex(user_input) 
+   print(f'In Decimal: {user_input}') 
+   print(f'In Hexadecimal: {hex_output}')
